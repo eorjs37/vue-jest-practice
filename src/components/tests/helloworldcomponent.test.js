@@ -5,4 +5,10 @@ describe('hello world', () => {
         const wrapper = shallowMount(HelloWorld);
         expect(wrapper.text()).toBe("hello")
     });
+
+    test('test created', () => {
+        const createdSpy = jest.spyOn(HelloWorld, "created");
+        const wrapper = shallowMount(HelloWorld);
+        expect(createdSpy).toHaveBeenCalled();
+    });
 });

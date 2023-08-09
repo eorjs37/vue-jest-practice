@@ -7,6 +7,13 @@
 <script>
 export default {
     name: 'HelloWorld',
+    data() {
+        return {
+            hello: ""
+        }
+    },
+    created() {
+    },
 }
 </script>
 <style scoped></style>
